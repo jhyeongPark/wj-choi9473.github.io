@@ -22,8 +22,8 @@ description:         >
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
-  name:              sungchul park
-  email:             sungchul.dev@gmail.com
+  name:              Wonjae Choi
+  email:             wj.choi9473@gmail.com
 
 # Fallback image and color
 image:               /assets/img/side.jpg
@@ -52,7 +52,7 @@ google_fonts:        Roboto+Mono|Nanum+Gothic+Coding:400,700
 disqus_shortname:    Sungchul-P
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2019. by Sungchul Park'
+copyright:           '&copy; 2019. by Wonaje Choi'
 
 # Format of the permalinks
 permalink:           pretty
