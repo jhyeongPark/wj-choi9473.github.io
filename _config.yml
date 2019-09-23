@@ -46,13 +46,13 @@ google_fonts:        Roboto+Mono|Nanum+Gothic+Coding:400,700
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-# google_analytics:    UA-110573232-1
+google_analytics:    UA-147952901-1
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
-disqus_shortname:    Sungchul-P
+disqus_shortname:    Wonjae-Choi
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2019. by Wonaje Choi'
+copyright:           '&copy; 2019. by Wonjae Choi'
 
 # Format of the permalinks
 permalink:           pretty
