@@ -12,7 +12,7 @@
 ├── _draft : 초안 작성 폴더, 커밋해도 반영되지 않음
 ├── _featured_categories : 카테고리(메뉴판의 큰 제목)
 ├── _featured_tags : 카테고리의 태그(메뉴판의 소제목)
-├── _includes : 기본 홈페이지 포맷
+├── _includes : 기본 홈페이지 포맷(footer,head 등 변경)
 ├── _ipynbs : ipynb 저장 폴더
 ├── _js : 자바스크립트 소스 저장 폴더
 ├── _layouts : 타입별 레이아웃 폴더
