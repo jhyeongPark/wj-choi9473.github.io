@@ -4,7 +4,6 @@
 - 이 블로그는 [박민](https://github.com/isme2n/isme2n.github.io)님과 [변성윤](https://github.com/zzsza/zzsza.github.io)님의 블로그 테마를 기반으로 제작되었습니다
 
 ### Structure
-- 변성윤님께서 정리해 주신 블로그 구조입니다
 
 ```
 ├── README.md
