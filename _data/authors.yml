@@ -22,7 +22,7 @@ nannantest1:
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    # facebook:        zzsza
+    # facebook:        <username>
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -32,7 +32,7 @@ nannantest1:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    # instagram:       data.scientist
+    # instagram:       <username>
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
@@ -75,4 +75,4 @@ mdo:
     github:          <username>
     twitter:         <username>
   image: 'data:image/gif;base64,R0lGODlhAQABAPAAACAgIP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' # http://jsfiddle.net/LPxrT/
-  color: '#268bd2'
+  color: '#0a0a0a'
