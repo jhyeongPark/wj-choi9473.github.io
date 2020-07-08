@@ -1,7 +1,7 @@
 
 ## Github Blog
 - [https://wj-choi9473.github.io](https://wj-choi9473.github.io)
-- 이 블로그는 Clean Blog테마로 [박민](https://github.com/isme2n/isme2n.github.io)님과 [변성윤](https://github.com/zzsza/zzsza.github.io)님의 블로그를 참고하여 만들었습니다.
+- 이 블로그는 Clean Blog 테마로 [박민](https://github.com/isme2n/isme2n.github.io)님과 [변성윤](https://github.com/zzsza/zzsza.github.io)님의 블로그를 참고하여 만들었습니다.
 
 ### Structure
 
