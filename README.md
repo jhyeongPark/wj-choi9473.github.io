@@ -1,17 +1,17 @@
 
 ## Github Blog
 - [https://wj-choi9473.github.io](https://wj-choi9473.github.io)
-- 이 블로그는 [박민](https://github.com/isme2n/isme2n.github.io)님과 [변성윤](https://github.com/zzsza/zzsza.github.io)님의 블로그 테마를 기반으로 제작되었습니다
+- 이 블로그는 Clean Blog테마로 [박민](https://github.com/isme2n/isme2n.github.io)님과 [변성윤](https://github.com/zzsza/zzsza.github.io)님의 블로그를 참고하여 만들었습니다.
 
 ### Structure
 
 ```
 ├── README.md
-├── _config.yml : 기본 설정이 저장된 파일
+├── _config.yml : 기본 설정이 저장된 파일, 환경변수 설정파일
 ├── _data : 유저 데이터가 저장된 폴더, author.yml만 수정하면 됨
 ├── _draft : 초안 작성 폴더, 커밋해도 반영되지 않음
-├── _featured_categories : 카테고리(메뉴판의 큰 제목)
-├── _featured_tags : 카테고리의 태그(메뉴판의 소제목)
+├── _featured_categories : 카테고리 대분류 폴더(메뉴판의 큰 제목)
+├── _featured_tags : 카테고리 태그 소분류 폴더(메뉴판의 소제목)
 ├── _includes : 기본 홈페이지 포맷(footer,head 등 변경)
 ├── _ipynbs : ipynb 저장 폴더
 ├── _js : 자바스크립트 소스 저장 폴더
