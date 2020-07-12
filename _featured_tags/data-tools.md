@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Marketing
-slug: marketing
+title: Tools
+slug: tools
 category: data
 menu: false
-order: 3
+order: 6
 ---
