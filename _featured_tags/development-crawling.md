@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Web
-slug: web
+title: Crawling
+slug: crawling
 category: development
 menu: false
 order: 2
