@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Dev
-slug: dev
+title: Cheatsheets
+slug: cheatsheets
 menu: true
 submenu: false
 order: 5
