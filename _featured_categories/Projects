@@ -1,0 +1,10 @@
+---
+layout: list
+title: Projects
+slug: projects
+menu: true
+submenu: true
+order: 4
+description: >
+  혼자 해본 분석 실습, 프로젝트들을 정리해 놓는 공간
+---
