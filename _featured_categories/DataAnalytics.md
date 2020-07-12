@@ -6,5 +6,5 @@ menu: true
 submenu: true
 order: 2
 description: >
-  Data related | Data와 관련된 글
+  Data 분석을 위해 필요한 지식을 정리 해놓는 
 ---
