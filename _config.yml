@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               My Journey into Data Science
+title:               Data Journey
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -13,7 +13,7 @@ url:                 https://wj-choi9473.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             Want to Become a Growth hacker who can code
+tagline:             Want to Become a Growth hacker with tech
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
@@ -52,7 +52,7 @@ google_analytics:    UA-147952901-1
 disqus_shortname:    Wonjae-Choi
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2019. by Wonjae Choi'
+copyright:           '&copy; 2020. by Wonjae Choi'
 
 # Format of the permalinks
 permalink:           pretty
