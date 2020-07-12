@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Dev
-slug: dev
+title: Projects
+slug: projects
 menu: true
 submenu: true
-order: 3
+order: 4
 description: >
-  주로 Data Science 및 그 외 개발에 관련된 모든 것.  
+  데이터분석 실습 & 프로젝트를 정리해 놓는 공간 
 ---
