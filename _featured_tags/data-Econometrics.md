@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Data Campus
-slug: datacampus
+title: Econometrics
+slug: econometrics
 category: data
 menu: false
 order: 4
