@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Marketing
-slug: marketing
+title: Social Sciences
+slug: social sciences
 category: data
 menu: false
 order: 3
