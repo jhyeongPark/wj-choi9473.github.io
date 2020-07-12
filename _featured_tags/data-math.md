@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Linear algebra
-slug: linear algebra
+title: Math
+slug: math
 category: data
 menu: false
 order: 2
