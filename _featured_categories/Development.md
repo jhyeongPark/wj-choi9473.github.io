@@ -4,7 +4,7 @@ title: Development
 slug: development
 menu: true
 submenu: true
-order: 5
+order: 3
 description: >
-  Development & mini projects | 개발과 관련된 지식과 미니프로젝트들
+  개발과 관련된 지식을 정리해 놓는 공간
 ---
