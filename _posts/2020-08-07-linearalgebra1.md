@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 선형대수의 기초 데이터와 행렬
-desc: 
+use_math: true
 categories: data
 tags: math
 comments: false
