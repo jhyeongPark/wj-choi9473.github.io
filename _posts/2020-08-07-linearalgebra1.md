@@ -5,7 +5,7 @@ use_math: true
 categories: data
 tags: math
 comments: false
-keywords: 선형대, linear algebra 
+keywords: linear algebra 
 
 ---
 
