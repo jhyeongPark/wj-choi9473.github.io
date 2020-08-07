@@ -1,3 +1,14 @@
+---
+layout: post
+title: 선형대수의 기초: 데이터와 행렬
+desc: 
+categories: data analytics
+tags: math
+comments: false
+keywords: 선형대tn, linear algebra 
+
+---
+
 대학교때 교양과목으로 linear algebra가 뭐지? 그냥 algebra같은건가?하고 뭣도 모르고 듣고  
 이제와서야 정말 필요한 학문이구나 하고 기초를 공부한다.  
 
