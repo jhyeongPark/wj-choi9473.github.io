@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 선형대수의 기초: 데이터와 행렬
+title: 선형대수의 기초_데이터와 행렬
 desc: 
 categories: data
 tags: math
