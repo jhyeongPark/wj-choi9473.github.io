@@ -2,7 +2,7 @@
 layout: post
 title: 선형대수의 기초: 데이터와 행렬
 desc: 
-categories: data analytics
+categories: data
 tags: math
 comments: false
 keywords: 선형대tn, linear algebra 
