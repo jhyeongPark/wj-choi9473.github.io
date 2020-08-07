@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CS50_3 
+title: CS50_3 알고리즘
 desc: 
 categories: development
 tags: computerscience
