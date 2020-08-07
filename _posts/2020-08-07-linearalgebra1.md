@@ -5,7 +5,7 @@ desc:
 categories: data
 tags: math
 comments: false
-keywords: 선형대tn, linear algebra 
+keywords: 선형대, linear algebra 
 
 ---
 
