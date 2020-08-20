@@ -1,7 +1,7 @@
 
 ## Github Blog
 - [https://wj-choi9473.github.io](https://wj-choi9473.github.io)
-- 이 블로그는 Clean Blog 테마로 [허민](https://theorydb.github.io/)님과 [변성윤](https://github.com/zzsza/zzsza.github.io)님의 블로그를 참고하여 만들었습니다.
+- 이 블로그는 [변성윤](https://github.com/zzsza/zzsza.github.io)님과 [허민](https://theorydb.github.io/)님의 블로그를 참고하여 만들었습니다.
 
 ### Structure
 
@@ -41,4 +41,4 @@
 - 글 파일이름은 ```2018-01-03-title1.md``` 이런 방식처럼 작성! 날짜를 빼고 쓰면 반영되지 않습니다. 또한, 한글로 작성시 가끔 오류가 뜨니 영어로 작성해 
 - 이미지를 추가할시 ```/assets/img/blog/''' 안에 폴더를 만든뒤 경로 설정해주세요
 
-### 현재 github에 올라간 원격 리포지토리에서 레이텍이 깨지는게 원격과 로컬간 트랙킹에 문제가 있는듯함 ㅠ 해결 방법을 찾는중
+ 현재 github에 올라간 원격 리포지토리에서 레이텍이 깨지는게 원격과 로컬간 트랙킹에 문제가 있는듯함 ㅠ 해결 방법을 찾는중
