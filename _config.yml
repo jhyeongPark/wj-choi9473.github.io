@@ -107,7 +107,7 @@ author:
       # url: "mailto:wj.choi9473@kaist.ac.kr"
     - label: "Linkedin"
       icon: "fas fa-fw fa-link"
-       url: "https://www.linkedin.com/in/wonjae-choi-92b567179/"
+       #url: "https://www.linkedin.com/in/wonjae-choi-92b567179/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
