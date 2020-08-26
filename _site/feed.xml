@@ -1,4 +1,336 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-26T23:25:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Data Journey</title><subtitle>Growth hacking and Problem solving</subtitle><author><name>Wonjae Choi</name><email>wj.choi9473@kaist.ac.kr</email></author><entry><title type="html">Example of Post</title><link href="http://localhost:4000/example/postexample/" rel="alternate" type="text/html" title="Example of Post" /><published>2020-08-26T00:00:00+09:00</published><updated>2020-08-26T00:00:00+09:00</updated><id>http://localhost:4000/example/postexample</id><content type="html" xml:base="http://localhost:4000/example/postexample/">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;This formula $f(x) = x^2$ is an example.&lt;/code&gt;&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-27T00:07:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Data Journey</title><subtitle>Growth hacking and Problem solving</subtitle><author><name>Wonjae Choi</name><email>wj.choi9473@kaist.ac.kr</email></author><entry><title type="html">Example of Post</title><link href="http://localhost:4000/example/postexample/" rel="alternate" type="text/html" title="Example of Post" /><published>2020-08-26T00:00:00+09:00</published><updated>2020-08-26T00:00:00+09:00</updated><id>http://localhost:4000/example/postexample</id><content type="html" xml:base="http://localhost:4000/example/postexample/">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;This formula $f(x) = x^2$ is an example.&lt;/code&gt;&lt;br /&gt;
 This formula $f(x) = x^2$ is an example.&lt;/p&gt;
 
-\[1+1\]</content><author><name>Wonjae Choi</name><email>wj.choi9473@kaist.ac.kr</email></author><category term="Example" /><summary type="html">This formula $f(x) = x^2$ is an example. This formula $f(x) = x^2$ is an example.</summary></entry></feed>
+\[1+1\]</content><author><name>Wonjae Choi</name><email>wj.choi9473@kaist.ac.kr</email></author><category term="Example" /><summary type="html">This formula $f(x) = x^2$ is an example. This formula $f(x) = x^2$ is an example.</summary></entry><entry><title type="html">내가 볼려고 만든 자주 쓰는 마크다운 문법</title><link href="http://localhost:4000/cheatsheets/markdown/" rel="alternate" type="text/html" title="내가 볼려고 만든 자주 쓰는 마크다운 문법" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/cheatsheets/markdown</id><content type="html" xml:base="http://localhost:4000/cheatsheets/markdown/">&lt;p&gt;마크다운이 뭔지도 몰르던 문과생이 공부하다 주피터 노트북에 코딩과 동시에 메모를 남기는 일이 많아져 정리한 글&lt;br /&gt;
+마크다운 에디터는 주로 Typora 와 StackEdit을 이용합니다.(강추!)&lt;br /&gt;
+메모장으론 Bear을 쓰고 있습니다.(Notion도 고려했지만 많은 기능이 필요 없어서 심플한 Bear을 쓰고 있습니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;목차이자 목차(내부링크) 만드는법&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;내부링크
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;사용문법: [Title](#이동할위치의 텍스트(띄어쓰기는 '-'))
+적용예: [1.제목과 호라이즌](#1.제목과-호라이즌)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h2 id=&quot;목차&quot;&gt;목차&lt;/h2&gt;
+    &lt;p&gt;&lt;a href=&quot;#제목과-호라이즌&quot;&gt;제목과 호라이즌&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;#리스트와-인용구&quot;&gt;리스트와 인용구&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;#문자강조&quot;&gt;문자강조&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;#링크와-이미지&quot;&gt;링크와 이미지&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;#코드블럭과-테이블&quot;&gt;코드블럭과 테이블&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;#텍&quot;&gt;텍(TeX)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;제목과-호라이즌&quot;&gt;제목과 호라이즌&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;제목(헤더): #으로 크기를 지정함 #이 많을 수록 크키가 작아짐 (h1~h6까지)&lt;/li&gt;
+  &lt;li&gt;호라이즌: ‘*’,’-‘,’_’ 기호들중 아무거나 연속으로 3번 쓰면됨
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;예시 
+# this is h1 
+## this is h2 
+### this is h3
+#### this is h4
+##### this is h5
+--- (h5와 h6사이에 줄(호라이즌)이 간걸 확인 할 수 있다)
+###### this is h6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h1 id=&quot;this-is-h1&quot;&gt;this is h1&lt;/h1&gt;
+    &lt;h2 id=&quot;this-is-h2&quot;&gt;this is h2&lt;/h2&gt;
+    &lt;h3 id=&quot;this-is-h3&quot;&gt;this is h3&lt;/h3&gt;
+    &lt;h4 id=&quot;this-is-h4&quot;&gt;this is h4&lt;/h4&gt;
+    &lt;h5 id=&quot;this-is-h5&quot;&gt;this is h5&lt;/h5&gt;
+    &lt;hr /&gt;
+    &lt;h6 id=&quot;this-is-h6&quot;&gt;this is h6&lt;/h6&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;리스트와-인용구&quot;&gt;리스트와 인용구&lt;/h1&gt;
+&lt;h2 id=&quot;리스트&quot;&gt;리스트&lt;/h2&gt;
+&lt;h3 id=&quot;-순서있는-목록번호&quot;&gt;● 순서있는 목록(번호)&lt;/h3&gt;
+&lt;p&gt;순서있는 목록은 숫자와 점을 사용한다&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;예시
+1. 첫번째
+2. 두번째
+3. 세번째
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;첫번째&lt;/li&gt;
+  &lt;li&gt;두번째&lt;/li&gt;
+  &lt;li&gt;세번째&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;-순서없는-목록글머리-기호-----&quot;&gt;● 순서없는 목록(글머리 기호: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; )&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;예시
+- 빨강
+  - 녹색
+    - 파랑
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;빨강
+    &lt;ul&gt;
+      &lt;li&gt;녹색
+        &lt;ul&gt;
+          &lt;li&gt;파랑&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;혼합해서 사용하는 것도 가능함&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* 1단계
+  - 2단계
+    + 3단계
+      + 4단계
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1단계
+    &lt;ul&gt;
+      &lt;li&gt;2단계
+        &lt;ul&gt;
+          &lt;li&gt;3단계
+            &lt;ul&gt;
+              &lt;li&gt;4단계&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;인용구blockquote&quot;&gt;인용구(BlockQuote)&lt;/h2&gt;
+&lt;p&gt;어떤 부분을 인용하거나 강조 하고 싶을때 사용&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; This is a first blockqute.
+&amp;gt;&amp;gt; This is a second blockqute.
+&amp;gt;&amp;gt;&amp;gt; This is a third blockqute.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a first blockqute.&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;This is a second blockqute.&lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;This is a third blockqute.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;이 안에서는 다른 마크다운 요소를 포함할 수 있다&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;this-is-a-h3&quot;&gt;This is a H3&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;List
+  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;textbox&lt;/code&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;개행&quot;&gt;개행&lt;/h2&gt;
+&lt;p&gt;문장줄바꾸기&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;스페이스바 최소 2번&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;문자강조&quot;&gt;문자강조&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*single asterisks* 이텔릭체
+_single underscores_
+**double asterisks** 볼드체
+__double underscores__
+~~cancelline~~ 취소선
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;cancelline&lt;/del&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;문장 중간에 사용할 경우에는 **띄어쓰기** 를 사용하는 것이 좋음&lt;/code&gt; &lt;br /&gt;
+문장 중간에 사용할 경우에는 &lt;strong&gt;띄어쓰기&lt;/strong&gt;를 사용하는 것이 좋음&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;링크와-이미지&quot;&gt;링크와 이미지&lt;/h2&gt;
+
+&lt;h2 id=&quot;링크&quot;&gt;링크&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;자동연결- 가장 간단&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;일반적인 URL 혹은 이메일주소 적기(좀더 명시하기 위해 &amp;lt;&amp;gt;로 감싸줌)
+
+* 외부링크: &amp;lt;http://example.com/&amp;gt;
+* 이메일링크: &amp;lt;address@example.com&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;외부링크: &lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;이메일링크: &lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;외부링크&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;사용문법: [Title](URL)
+적용예: [Google](https://google.com, &quot;google link&quot;)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;이미지&quot;&gt;이미지&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Alt text](/path/to/img.jpg)
+![Alt text](URL)
+![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
+![Alt text](URL &quot;Optional title&quot;)
+이미지 크기를 조절 하기 위해 주로 쓰는 방식 
+&amp;lt;img src = &quot;/path/to/img.jpg&quot; width=&quot;400px&quot; height=&quot;300px&quot; title=&quot;px(픽셀) 크기 설정&quot; &amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;코드블럭과-테이블&quot;&gt;코드블럭과 테이블&lt;/h2&gt;
+&lt;h2 id=&quot;코드블럭&quot;&gt;코드블럭&lt;/h2&gt;
+&lt;p&gt;” ` “ 기호를 1번 또는 3번씩 써서 감싸준다 또한 어떤 언어인지 명시도 가능하다
+ (사실 코드는 주피터노트북에서 실행후 마크다운으로 변환해 가져오기 때문에 잘 안쓴다)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```python
+print(&quot;hello world&quot;)
+``` 파이썬이라 하면
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;테이블&quot;&gt;테이블&lt;/h2&gt;
+&lt;p&gt;테이블은 “|” (수평선,vertical var이다 백슬래쉬+shift)와 “—-“ 으로 만들수있다&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;|제목|내용|설명|
+|---|---|---|
+|o|o|o|
+|o|x|o|
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;제목&lt;/th&gt;
+      &lt;th&gt;내용&lt;/th&gt;
+      &lt;th&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;o&lt;/td&gt;
+      &lt;td&gt;o&lt;/td&gt;
+      &lt;td&gt;o&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;o&lt;/td&gt;
+      &lt;td&gt;x&lt;/td&gt;
+      &lt;td&gt;o&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;간단한 셸 명령어를 표로 만들어 보았다&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;center&gt;명령&lt;/center&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;center&gt;윈도우 셸&lt;/center&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;&lt;center&gt;맥/ 리눅스 셸&lt;/center&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;화면지우기&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt;cls &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;ctrl+l&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;현재 디렉터리 이름 출력&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt;cd &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;pwd&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;현재 디렉터리의 파일 목록 출력&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt; dir &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;ls -Fcal&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;한 칸 위의 디렉터리로 이동&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt;cd .. &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;cd ../&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;한 칸 아래의 디렉터리로 이동&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt;cd 디렉터리이름 &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;cd 디렉터리 이름&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;파일 지우기&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt;del 파일이름 &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;rm 파일이름&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;디렉터리 만들기&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt;mkdir 디렉터리이름 &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;mkdir 디렉터리이름&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;디렉터리 지우기&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt;rmdir 디렉터리이름 &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;rmdir 디렉터리이름&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;셀 나가기&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt;exit &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;exit&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;홈디렉터리 이동&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;center&gt;cd %HOMEPATH% &lt;/center&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;em&gt;cd ~&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;텍&quot;&gt;텍&lt;/h2&gt;
+&lt;p&gt;수식을 표현 할 수 있다&lt;br /&gt;
+&lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX/Mathematics&quot;&gt;자세한 문법은 여기서!&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:TeX_%EB%AC%B8%EB%B2%95&quot;&gt;아니면 여기서!&lt;/a&gt;&lt;br /&gt;
+주피터 노트북에서는 수식을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt; (문장안에서 인라인) 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$&lt;/code&gt; (독립된 디스플레이) 기호로 감싸주고 문자를 표기하려면 \를 붙힌다&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;예)
+$\alpha = \beta$   
+  
+$y=x^2$  
+
+$e^{i\pi} + 1 = 0$
+
+$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$
+
+$\frac{n!}{k!(n-k)!} = {n \choose k}$
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;$\alpha = \beta$&lt;/p&gt;
+
+&lt;p&gt;$y=x^2$&lt;/p&gt;
+
+&lt;p&gt;$e^{i\pi} + 1 = 0$&lt;/p&gt;
+
+&lt;p&gt;$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$&lt;/p&gt;
+
+&lt;p&gt;$\frac{n!}{k!(n-k)!} = {n \choose k}$&lt;/p&gt;</content><author><name>Wonjae Choi</name><email>wj.choi9473@kaist.ac.kr</email></author><category term="cheatsheets" /><summary type="html">마크다운이 뭔지도 몰르던 문과생이 공부하다 주피터 노트북에 코딩과 동시에 메모를 남기는 일이 많아져 정리한 글 마크다운 에디터는 주로 Typora 와 StackEdit을 이용합니다.(강추!) 메모장으론 Bear을 쓰고 있습니다.(Notion도 고려했지만 많은 기능이 필요 없어서 심플한 Bear을 쓰고 있습니다.)</summary></entry></feed>

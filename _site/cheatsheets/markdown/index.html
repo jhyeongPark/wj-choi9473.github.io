@@ -1,0 +1,981 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>내가 볼려고 만든 자주 쓰는 마크다운 문법 - Data Journey</title>
+<meta name="description" content="마크다운이 뭔지도 몰르던 문과생이 공부하다 주피터 노트북에 코딩과 동시에 메모를 남기는 일이 많아져 정리한 글 마크다운 에디터는 주로 Typora 와 StackEdit을 이용합니다.(강추!) 메모장으론 Bear을 쓰고 있습니다.(Notion도 고려했지만 많은 기능이 필요 없어서 심플한 Bear을 쓰고 있습니다.)">
+
+
+  <meta name="author" content="Wonjae Choi">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Data Journey">
+<meta property="og:title" content="내가 볼려고 만든 자주 쓰는 마크다운 문법">
+<meta property="og:url" content="http://localhost:4000/cheatsheets/markdown/">
+
+
+  <meta property="og:description" content="마크다운이 뭔지도 몰르던 문과생이 공부하다 주피터 노트북에 코딩과 동시에 메모를 남기는 일이 많아져 정리한 글 마크다운 에디터는 주로 Typora 와 StackEdit을 이용합니다.(강추!) 메모장으론 Bear을 쓰고 있습니다.(Notion도 고려했지만 많은 기능이 필요 없어서 심플한 Bear을 쓰고 있습니다.)">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-07-13T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/cheatsheets/markdown/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Wonjae Choi",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Data Journey Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$'] ],
+    processEscapes: true,
+  }
+});
+MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+    
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Data Journey
+          <span class="site-subtitle">Growth hacking and Problem solving</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#cheatsheets" itemprop="item"><span itemprop="name">Cheatsheets</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">내가 볼려고 만든 자주 쓰는 마크다운 문법</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Wonjae Choi" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Wonjae Choi</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>제 다양한 생각, 책, 논문등을 정리하며 필요한 역량을 채우기 위해 공부해 나가는 과정을 공유할 예정입니다. <br /> 글에서 잘못된 부분, 수정했으면 하는 부분, 그 외에 의견이 있을 시 알려주신다면 감사하겠습니다.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:wj.choi9473@kaist.ac.kr">
+            <meta itemprop="email" content="wj.choi9473@kaist.ac.kr" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/wonjae-choi-92b567179" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/wj-choi9473" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="내가 볼려고 만든 자주 쓰는 마크다운 문법">
+    <meta itemprop="description" content="마크다운이 뭔지도 몰르던 문과생이 공부하다 주피터 노트북에 코딩과 동시에 메모를 남기는 일이 많아져 정리한 글마크다운 에디터는 주로 Typora 와 StackEdit을 이용합니다.(강추!)메모장으론 Bear을 쓰고 있습니다.(Notion도 고려했지만 많은 기능이 필요 없어서 심플한 Bear을 쓰고 있습니다.)">
+    <meta itemprop="datePublished" content="2020-07-13T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">내가 볼려고 만든 자주 쓰는 마크다운 문법
+</h1>
+          
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        2 minute read
+      
+    
+
+  </p>
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents of Table</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#목차">목차</a></li>
+  <li><a href="#this-is-h2">this is h2</a>
+    <ul>
+      <li><a href="#this-is-h3">this is h3</a>
+        <ul>
+          <li><a href="#this-is-h4">this is h4</a>
+            <ul>
+              <li><a href="#this-is-h5">this is h5</a>
+                <ul>
+                  <li><a href="#this-is-h6">this is h6</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#리스트">리스트</a>
+    <ul>
+      <li><a href="#-순서있는-목록번호">● 순서있는 목록(번호)</a></li>
+      <li><a href="#-순서없는-목록글머리-기호-----">● 순서없는 목록(글머리 기호: *, +, - )</a></li>
+    </ul>
+  </li>
+  <li><a href="#인용구blockquote">인용구(BlockQuote)</a>
+    <ul>
+      <li><a href="#this-is-a-h3">This is a H3</a></li>
+    </ul>
+  </li>
+  <li><a href="#개행">개행</a></li>
+  <li><a href="#문자강조">문자강조</a></li>
+  <li><a href="#링크와-이미지">링크와 이미지</a></li>
+  <li><a href="#링크">링크</a></li>
+  <li><a href="#이미지">이미지</a></li>
+  <li><a href="#코드블럭과-테이블">코드블럭과 테이블</a></li>
+  <li><a href="#코드블럭">코드블럭</a></li>
+  <li><a href="#테이블">테이블</a></li>
+  <li><a href="#텍">텍</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>마크다운이 뭔지도 몰르던 문과생이 공부하다 주피터 노트북에 코딩과 동시에 메모를 남기는 일이 많아져 정리한 글<br />
+마크다운 에디터는 주로 Typora 와 StackEdit을 이용합니다.(강추!)<br />
+메모장으론 Bear을 쓰고 있습니다.(Notion도 고려했지만 많은 기능이 필요 없어서 심플한 Bear을 쓰고 있습니다.)</p>
+
+<p><strong>목차이자 목차(내부링크) 만드는법</strong></p>
+<ul>
+  <li>내부링크
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>사용문법: [Title](#이동할위치의 텍스트(띄어쓰기는 '-'))
+적용예: [1.제목과 호라이즌](#1.제목과-호라이즌)
+</code></pre></div>    </div>
+    <h2 id="목차">목차</h2>
+    <p><a href="#제목과-호라이즌">제목과 호라이즌</a><br />
+<a href="#리스트와-인용구">리스트와 인용구</a><br />
+<a href="#문자강조">문자강조</a><br />
+<a href="#링크와-이미지">링크와 이미지</a><br />
+<a href="#코드블럭과-테이블">코드블럭과 테이블</a><br />
+<a href="#텍">텍(TeX)</a></p>
+  </li>
+</ul>
+
+<h1 id="제목과-호라이즌">제목과 호라이즌</h1>
+
+<ul>
+  <li>제목(헤더): #으로 크기를 지정함 #이 많을 수록 크키가 작아짐 (h1~h6까지)</li>
+  <li>호라이즌: ‘*’,’-‘,’_’ 기호들중 아무거나 연속으로 3번 쓰면됨
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>예시 
+# this is h1 
+## this is h2 
+### this is h3
+#### this is h4
+##### this is h5
+--- (h5와 h6사이에 줄(호라이즌)이 간걸 확인 할 수 있다)
+###### this is h6
+</code></pre></div>    </div>
+    <h1 id="this-is-h1">this is h1</h1>
+    <h2 id="this-is-h2">this is h2</h2>
+    <h3 id="this-is-h3">this is h3</h3>
+    <h4 id="this-is-h4">this is h4</h4>
+    <h5 id="this-is-h5">this is h5</h5>
+    <hr />
+    <h6 id="this-is-h6">this is h6</h6>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="리스트와-인용구">리스트와 인용구</h1>
+<h2 id="리스트">리스트</h2>
+<h3 id="-순서있는-목록번호">● 순서있는 목록(번호)</h3>
+<p>순서있는 목록은 숫자와 점을 사용한다</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>예시
+1. 첫번째
+2. 두번째
+3. 세번째
+</code></pre></div></div>
+<ol>
+  <li>첫번째</li>
+  <li>두번째</li>
+  <li>세번째</li>
+</ol>
+
+<h3 id="-순서없는-목록글머리-기호-----">● 순서없는 목록(글머리 기호: <code class="language-plaintext highlighter-rouge">*</code>, <code class="language-plaintext highlighter-rouge">+</code>, <code class="language-plaintext highlighter-rouge">-</code> )</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>예시
+- 빨강
+  - 녹색
+    - 파랑
+</code></pre></div></div>
+<ul>
+  <li>빨강
+    <ul>
+      <li>녹색
+        <ul>
+          <li>파랑</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>혼합해서 사용하는 것도 가능함</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* 1단계
+  - 2단계
+    + 3단계
+      + 4단계
+</code></pre></div></div>
+
+<ul>
+  <li>1단계
+    <ul>
+      <li>2단계
+        <ul>
+          <li>3단계
+            <ul>
+              <li>4단계</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="인용구blockquote">인용구(BlockQuote)</h2>
+<p>어떤 부분을 인용하거나 강조 하고 싶을때 사용</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; This is a first blockqute.
+&gt;&gt; This is a second blockqute.
+&gt;&gt;&gt; This is a third blockqute.
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>This is a first blockqute.</p>
+  <blockquote>
+    <p>This is a second blockqute.</p>
+    <blockquote>
+      <p>This is a third blockqute.</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>이 안에서는 다른 마크다운 요소를 포함할 수 있다</p>
+<blockquote>
+  <h3 id="this-is-a-h3">This is a H3</h3>
+  <ul>
+    <li>List
+  <code class="language-plaintext highlighter-rouge">textbox</code></li>
+  </ul>
+</blockquote>
+
+<h2 id="개행">개행</h2>
+<p>문장줄바꾸기</p>
+<ul>
+  <li>스페이스바 최소 2번</li>
+</ul>
+
+<h2 id="문자강조">문자강조</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*single asterisks* 이텔릭체
+_single underscores_
+**double asterisks** 볼드체
+__double underscores__
+~~cancelline~~ 취소선
+</code></pre></div></div>
+<blockquote>
+  <ul>
+    <li><em>single asterisks</em></li>
+    <li><em>single underscores</em></li>
+    <li><strong>double asterisks</strong></li>
+    <li><strong>double underscores</strong></li>
+    <li><del>cancelline</del></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">문장 중간에 사용할 경우에는 **띄어쓰기** 를 사용하는 것이 좋음</code> <br />
+문장 중간에 사용할 경우에는 <strong>띄어쓰기</strong>를 사용하는 것이 좋음</p>
+</blockquote>
+
+<h2 id="링크와-이미지">링크와 이미지</h2>
+
+<h2 id="링크">링크</h2>
+<ul>
+  <li>자동연결- 가장 간단</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>일반적인 URL 혹은 이메일주소 적기(좀더 명시하기 위해 &lt;&gt;로 감싸줌)
+
+* 외부링크: &lt;http://example.com/&gt;
+* 이메일링크: &lt;address@example.com&gt;
+
+</code></pre></div></div>
+
+<ul>
+  <li>외부링크: <a href="http://example.com/">http://example.com/</a></li>
+  <li>이메일링크: <a href="mailto:address@example.com">address@example.com</a></li>
+</ul>
+
+<hr />
+<ul>
+  <li>외부링크</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>사용문법: [Title](URL)
+적용예: [Google](https://google.com, "google link")
+
+</code></pre></div></div>
+
+<p>Link: <a href="https://google.com">Google</a></p>
+
+<h2 id="이미지">이미지</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Alt text](/path/to/img.jpg)
+![Alt text](URL)
+![Alt text](/path/to/img.jpg "Optional title")
+![Alt text](URL "Optional title")
+이미지 크기를 조절 하기 위해 주로 쓰는 방식 
+&lt;img src = "/path/to/img.jpg" width="400px" height="300px" title="px(픽셀) 크기 설정" &gt;
+
+</code></pre></div></div>
+
+<h2 id="코드블럭과-테이블">코드블럭과 테이블</h2>
+<h2 id="코드블럭">코드블럭</h2>
+<p>” ` “ 기호를 1번 또는 3번씩 써서 감싸준다 또한 어떤 언어인지 명시도 가능하다
+ (사실 코드는 주피터노트북에서 실행후 마크다운으로 변환해 가져오기 때문에 잘 안쓴다)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```python
+print("hello world")
+``` 파이썬이라 하면
+</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="테이블">테이블</h2>
+<p>테이블은 “|” (수평선,vertical var이다 백슬래쉬+shift)와 “—-“ 으로 만들수있다</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|제목|내용|설명|
+|---|---|---|
+|o|o|o|
+|o|x|o|
+
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>제목</th>
+      <th>내용</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>o</td>
+      <td>o</td>
+      <td>o</td>
+    </tr>
+    <tr>
+      <td>o</td>
+      <td>x</td>
+      <td>o</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>간단한 셸 명령어를 표로 만들어 보았다</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><center>명령</center></th>
+      <th style="text-align: center"><center>윈도우 셸</center></th>
+      <th style="text-align: right"><center>맥/ 리눅스 셸</center></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>화면지우기</strong></td>
+      <td style="text-align: center"><center>cls </center></td>
+      <td style="text-align: right"><em>ctrl+l</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>현재 디렉터리 이름 출력</strong></td>
+      <td style="text-align: center"><center>cd </center></td>
+      <td style="text-align: right"><em>pwd</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>현재 디렉터리의 파일 목록 출력</strong></td>
+      <td style="text-align: center"><center> dir </center></td>
+      <td style="text-align: right"><em>ls -Fcal</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>한 칸 위의 디렉터리로 이동</strong></td>
+      <td style="text-align: center"><center>cd .. </center></td>
+      <td style="text-align: right"><em>cd ../</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>한 칸 아래의 디렉터리로 이동</strong></td>
+      <td style="text-align: center"><center>cd 디렉터리이름 </center></td>
+      <td style="text-align: right"><em>cd 디렉터리 이름</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>파일 지우기</strong></td>
+      <td style="text-align: center"><center>del 파일이름 </center></td>
+      <td style="text-align: right"><em>rm 파일이름</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>디렉터리 만들기</strong></td>
+      <td style="text-align: center"><center>mkdir 디렉터리이름 </center></td>
+      <td style="text-align: right"><em>mkdir 디렉터리이름</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>디렉터리 지우기</strong></td>
+      <td style="text-align: center"><center>rmdir 디렉터리이름 </center></td>
+      <td style="text-align: right"><em>rmdir 디렉터리이름</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>셀 나가기</strong></td>
+      <td style="text-align: center"><center>exit </center></td>
+      <td style="text-align: right"><em>exit</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>홈디렉터리 이동</strong></td>
+      <td style="text-align: center"><center>cd %HOMEPATH% </center></td>
+      <td style="text-align: right"><em>cd ~</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="텍">텍</h2>
+<p>수식을 표현 할 수 있다<br />
+<a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">자세한 문법은 여기서!</a><br />
+<a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:TeX_%EB%AC%B8%EB%B2%95">아니면 여기서!</a><br />
+주피터 노트북에서는 수식을 <code class="language-plaintext highlighter-rouge">$</code> (문장안에서 인라인) 또는 <code class="language-plaintext highlighter-rouge">$$</code> (독립된 디스플레이) 기호로 감싸주고 문자를 표기하려면 \를 붙힌다</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>예)
+$\alpha = \beta$   
+  
+$y=x^2$  
+
+$e^{i\pi} + 1 = 0$
+
+$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$
+
+$\frac{n!}{k!(n-k)!} = {n \choose k}$
+
+
+</code></pre></div></div>
+
+<p>$\alpha = \beta$</p>
+
+<p>$y=x^2$</p>
+
+<p>$e^{i\pi} + 1 = 0$</p>
+
+<p>$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$</p>
+
+<p>$\frac{n!}{k!(n-k)!} = {n \choose k}$</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#cheatsheets" class="page__taxonomy-item" rel="tag">cheatsheets</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-07-13T00:00:00+09:00">July 13, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%EB%82%B4%EA%B0%80+%EB%B3%BC%EB%A0%A4%EA%B3%A0+%EB%A7%8C%EB%93%A0+%EC%9E%90%EC%A3%BC+%EC%93%B0%EB%8A%94+%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4+%EB%AC%B8%EB%B2%95%20http%3A%2F%2Flocalhost%3A4000%2Fcheatsheets%2Fmarkdown%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fcheatsheets%2Fmarkdown%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fcheatsheets%2Fmarkdown%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/example/postexample/" class="pagination--pager" title="Example of Post
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/example/postexample/" rel="permalink">Example of Post
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        less than 1 minute read
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">This formula $f(x) = x^2$ is an example.
+This formula $f(x) = x^2$ is an example.
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Wonjae Choi. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/cheatsheets/markdown/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/cheatsheets/markdown"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://wonjaechoi.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
