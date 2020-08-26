@@ -11,7 +11,7 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-toc_label: Contents of Table
+toc_label: Table of contents
 ---
 
 ```This formula $f(x) = x^2$ is an example.```  
