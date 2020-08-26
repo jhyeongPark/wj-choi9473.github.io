@@ -67,7 +67,7 @@ minimal-mistakes
 
 
 ### 글 작성
-- ```categories:``` 설정한 후, ```_posts```에 글을 작성합니다
+- ```categories:``` 설정한 후, ```_posts```에 글을 작성합니다. (수식을 표현하려면 ```use_math: true```)
 - 글 파일이름은 ```YEAR-MONTH-DAY-titme.md | 2018-01-03-title1.md``` 이런 방식처럼 작성! 날짜를 빼고 쓰면 반영되지 않습니다. 또한, 제목은 영어로 작성
 - 이미지를 추가할시 ```/assets/img/blog/''' 안에 폴더를 만든뒤 경로 설정해주세요
 
