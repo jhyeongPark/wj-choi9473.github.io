@@ -21,9 +21,9 @@ title_separator          : "-"  # 타이틀 사이 구분자 <title>Welcome to J
 subtitle                 : "Growth hacking and Problem solving" # site tagline that appears below site title in masthead 타이틀 아래에 나올 작은 글씨
 name                     : "Wonjae Choi"
 description              : "Growth hacking and Problem solving"
-url                      : https://wj-choi9473.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io" github 호스트 주소
+url                      : "https://wj-choi9473.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io" github 호스트 주소
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : wj-choi9473/wj-choi9473.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "wj-choi9473/wj-choi9473.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png" 홈페이지 기본 티져이미지
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" 타이틀 옆에 작게 들어갈 이미지
 masthead_title           : "Data Journey" # overrides the website title displayed in the masthead, use " " for no title 홈페이지 최상단에 들어갈 타이틀
@@ -116,7 +116,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       #url: "https://github.com/wj-choi9473"
+      # url: "https://github.com/wj-choi9473"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -132,7 +132,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+       url: "https://github.com/wj-choi9473"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
