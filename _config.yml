@@ -97,15 +97,15 @@ analytics:
 # Site Author
 author:
   name             : "Wonjae Choi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg" # 프로필 이미지
-  bio              : " __KAIST__ College of Business (2020.03 - ) <br> - M.S. in Management Engineering - Marketing <br> - __The Pennsylvania State University__ College of Communications (2013.08 - 2016.05) <br> - B.A. in Advertising. <br>  제 다양한 생각, 책, 논문등을 정리하며 필요한 역량을 채우기 위해 공부해 나가는 과정을 공유할 예정입니다. <br> 블로그 포스트 글에서 잘못된 부분, 수정했으면 하는 부분, 그 외에 의견이 있을 시 알려주신다면 감사하겠습니다."
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg" # 프로필 이미지
+  bio              : "제 다양한 생각, 책, 논문등을 정리하며 필요한 역량을 채우기 위해 공부해 나가는 과정을 공유할 예정입니다. <br> 글에서 잘못된 부분, 수정했으면 하는 부분, 그 외에 의견이 있을 시 알려주신다면 감사하겠습니다."
   location         : "Republic of Korea"
   email            : "wj.choi9473@kaist.ac.kr"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:wj.choi9473@kaist.ac.kr"
-    - label: "Linkedin"
+    - label: "website"
       icon: "fas fa-fw fa-link"
        #url: "https://www.linkedin.com/in/wonjae-choi-92b567179/"
     - label: "Twitter"
@@ -116,7 +116,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       #url: "https://wj-choi9473.github.io"
+       #url: "https://github.com/wj-choi9473"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
