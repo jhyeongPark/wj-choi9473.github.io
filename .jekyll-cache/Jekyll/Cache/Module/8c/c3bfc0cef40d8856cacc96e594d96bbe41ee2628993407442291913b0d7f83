@@ -1,4 +1,4 @@
-I"r
+I"p
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -23,7 +23,7 @@
         </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">토글 메뉴</span>
+          <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>

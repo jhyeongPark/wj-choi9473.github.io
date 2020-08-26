@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # 테마색 설정 "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 title                    : "Data Journey" # Meta 태그에 들어가는 영역 , masthead_title등이 없으면 기본값으로 나온다.
 title_separator          : "-"  # 타이틀 사이 구분자 <title>Welcome to Jekyll | Minimal Mistakes</title> 해당 형식으로 들어갑니다.
 subtitle                 : "Growth hacking and Problem solving" # site tagline that appears below site title in masthead 타이틀 아래에 나올 작은 글씨
