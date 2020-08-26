@@ -1,0 +1,11 @@
+I"t<p><code class="language-plaintext highlighter-rouge">This formula $f(x) = x^2$ is an example.</code><br />
+This formula $f(x) = x^2$ is an example.</p>
+
+<p><code class="language-plaintext highlighter-rouge">$$
+\lim_{x\to 0}{\frac{e^x-1}{2x}}
+\overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
+\lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
+$$</code></p>
+
+\[A + B\]
+:ET
