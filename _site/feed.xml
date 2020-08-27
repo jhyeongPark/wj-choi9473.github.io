@@ -1,7 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-27T14:20:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Data Journey</title><subtitle>Growth hacking and Problem solving</subtitle><author><name>Wonjae Choi</name><email>wj.choi9473@kaist.ac.kr</email></author><entry><title type="html">Example of Post</title><link href="http://localhost:4000/example/postexample/" rel="alternate" type="text/html" title="Example of Post" /><published>2020-08-26T00:00:00+09:00</published><updated>2020-08-26T00:00:00+09:00</updated><id>http://localhost:4000/example/postexample</id><content type="html" xml:base="http://localhost:4000/example/postexample/">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;This formula $f(x) = x^2$ is an example.&lt;/code&gt;&lt;br /&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Journey</title>
+    <description>Growth hacking and Problem solving</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 27 Aug 2020 14:25:10 +0900</pubDate>
+    <lastBuildDate>Thu, 27 Aug 2020 14:25:10 +0900</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Example of Post</title>
+        <description>&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;This formula $f(x) = x^2$ is an example.&lt;/code&gt;&lt;br /&gt;
 This formula $f(x) = x^2$ is an example.&lt;/p&gt;
 
-\[1+1\]</content><author><name>Wonjae Choi</name><email>wj.choi9473@kaist.ac.kr</email></author><category term="Example" /><summary type="html">This formula $f(x) = x^2$ is an example. This formula $f(x) = x^2$ is an example.</summary></entry><entry><title type="html">MarkDown Example</title><link href="http://localhost:4000/cheatsheets/markdown/" rel="alternate" type="text/html" title="MarkDown Example" /><published>2020-07-13T00:00:00+09:00</published><updated>2020-07-13T00:00:00+09:00</updated><id>http://localhost:4000/cheatsheets/markdown</id><content type="html" xml:base="http://localhost:4000/cheatsheets/markdown/">&lt;h1 id=&quot;내가-보려고-만든-마크다운-문법-가이드&quot;&gt;내가 보려고 만든 마크다운 문법 가이드&lt;/h1&gt;
+\[1+1\]
+</description>
+        <pubDate>Wed, 26 Aug 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/example/postexample/</link>
+        <guid isPermaLink="true">http://localhost:4000/example/postexample/</guid>
+        
+        
+        <category>Example</category>
+        
+      </item>
+    
+      <item>
+        <title>MarkDown Example</title>
+        <description>&lt;h1 id=&quot;내가-보려고-만든-마크다운-문법-가이드&quot;&gt;내가 보려고 만든 마크다운 문법 가이드&lt;/h1&gt;
 
 &lt;p&gt;마크다운이 뭔지도 몰르던 문과생이 공부하다 주피터 노트북에 코딩과 동시에 메모를 남기는 일이 많아져 정리한 글&lt;br /&gt;
 마크다운 에디터는 주로 Typora 와 StackEdit을 이용합니다.(강추!)&lt;br /&gt;
@@ -335,4 +361,17 @@ $\frac{n!}{k!(n-k)!} = {n \choose k}$
 
 &lt;p&gt;$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$&lt;/p&gt;
 
-&lt;p&gt;$\frac{n!}{k!(n-k)!} = {n \choose k}$&lt;/p&gt;</content><author><name>Wonjae Choi</name><email>wj.choi9473@kaist.ac.kr</email></author><category term="Cheatsheets" /><summary type="html">내가 보려고 만든 마크다운 문법 가이드</summary></entry></feed>
+&lt;p&gt;$\frac{n!}{k!(n-k)!} = {n \choose k}$&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 13 Jul 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/cheatsheets/markdown/</link>
+        <guid isPermaLink="true">http://localhost:4000/cheatsheets/markdown/</guid>
+        
+        
+        <category>Cheatsheets</category>
+        
+      </item>
+    
+  </channel>
+</rss>
